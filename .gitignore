@@ -1,0 +1,5 @@
+*.env
+*.cache*
+*.cfg
+*Downloads*
+*mp3*

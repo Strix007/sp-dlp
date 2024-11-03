@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sp-dlp"
+version = "0.1.0"
+description = "Download your spotify playlists by comparing your playlist metadata and youtube searches."
+authors = ["Arbab Khan <arbabashruff@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+spotipy = "^2.24.0"
+mutagen = "^1.47.0"
+yt-dlp = "^2024.10.22"
+youtube-search-python = "^1.6.6"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
