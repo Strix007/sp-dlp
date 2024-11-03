@@ -1,0 +1,88 @@
+#+TITLE: sp-dlp
+#+AUTHOR: Arbab Khan   
+#+EMAIL: arbabashruff@gmail.com
+#+DESCRIPTION: Download your spotify playlists by comparing your playlist metadata and youtube searches.
+Download your spotify playlists by comparing your playlist metadata and youtube searches.
+
+* Table of Contents
+:PROPERTIES:
+:TOC:      :include all :ignore this
+:END:
+:CONTENTS:
+- [[#about-this-script][About This Script]]
+- [[#requirements][Requirements]]
+  - [[#spotify-client-id-and-secret][Spotify Client Id And Secret]]
+    - [[#obtaining-the-client-id--secret][Obtaining The Client Id & Secret]]
+  - [[#what-to-install][What To Install]]
+- [[#setup][Setup]]
+- [[#first-run][First Run]]
+- [[#limitations][Limitations]]
+- [[#contributions][Contributions]]
+:END:
+
+* About This Script
+:PROPERTIES:
+:CUSTOM_ID: about-this-script
+:END:
+This Python script allows users to download music tracks from a Spotify playlist by searching for their corresponding versions on YouTube. It extracts the playlist name and track information using the Spotify API, downloads the audio as MP3 files, and embeds relevant metadata, including track titles and album art. The downloaded files are organized within a directory named after the playlist for easy access.
+* Requirements
+:PROPERTIES:
+:CUSTOM_ID: requirements
+:END:
+** Spotify Client Id And Secret
+:PROPERTIES:
+:CUSTOM_ID: spotify-client-id-and-secret
+:END:
+Spotipy relies on the Spotify API. In order to use the Spotify API, you'll need to create a Spotify developer account.
+*** Obtaining The Client Id & Secret
+:PROPERTIES:
+:CUSTOM_ID: obtaining-the-client-id--secret
+:END:
+ Visit the Spotify developer portal. If you already have a Spotify account, click "Log in" and enter your username and password. Otherwise, click "Sign up" and follow the steps to create an account. After you've signed in or signed up, you should be redirected to your developer dashboard.
+
+ Click the "Create an App" button. Enter any name and description you'd like for your new app. Accept the terms of service and click "Create."
+
+ In your new app's Overview screen, click the "Edit Settings" button and scroll down to "Redirect URIs." Add "http://localhost:1234" (or any other port number of your choosing). Hit the "Save" button at the bottom of the Settings panel to return to you App Overview screen.
+
+ Underneath your app name and description on the lefthand side, you'll see a "Show Client Secret" link. Click that link to reveal your Client Secret, then copy both your Client Secret and your Client ID somewhere on your computer. You'll need to access them later.
+
+** What To Install
+:PROPERTIES:
+:CUSTOM_ID: what-to-install
+:END:
+- [[https://python-poetry.org/docs/#installation][Poetry]]   
+
+* Setup
+:PROPERTIES:
+:CUSTOM_ID: setup
+:END:
+- Clone the script on your local machine
+  
+  =git clone https://github.com/Strix007/sp-dlp.git=
+- CD into the directory
+  
+    =cd sp-dlp=
+- Run Poetry
+  
+      =poetry install=
+- Run the script
+  
+  =poetry python run sp-dlp.py=
+
+* First Run
+:PROPERTIES:
+:CUSTOM_ID: first-run
+:END:
+Upon the initial execution, you will be prompted for the client id and client secret. Paste them and they will be saved in a =config.cfg=, and not be needed for further runs unless the =config.cfg= is deleted or moved.
+
+* Limitations
+:PROPERTIES:
+:CUSTOM_ID: limitations
+:END:
+This script only works with playlist links, not album or artist links. Making it work with other types of links a goal for the future.
+
+* Contributions
+:PROPERTIES:
+:CUSTOM_ID: contributions
+:END:
+Contributions such as PRs and Issues are awlays welcome and highly encouraged.
