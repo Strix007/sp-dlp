@@ -67,7 +67,7 @@ Spotipy relies on the Spotify API. In order to use the Spotify API, you'll need 
       =poetry install=
 - Run the script
   
-  =poetry python run sp-dlp.py=
+  =poetry run python sp-dlp.py=
 
 * First Run
 :PROPERTIES:

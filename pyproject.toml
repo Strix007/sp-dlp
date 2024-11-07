@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "Download your spotify playlists by comparing your playlist metadata and youtube searches."
 authors = ["Arbab Khan <arbabashruff@gmail.com>"]
 license = "GPL-3.0"
-readme = "README.md"
+readme = "README.org"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
