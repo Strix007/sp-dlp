@@ -85,4 +85,4 @@ This script only works with playlist links, not album or artist links. Making it
 :PROPERTIES:
 :CUSTOM_ID: contributions
 :END:
-Contributions such as PRs and Issues are awlays welcome and highly encouraged.
+Contributions such as PRs and Issues are always welcome and highly encouraged.
